@@ -1,10 +1,12 @@
-import './App.css'
+import './css/style.css'
+import Header from './components/Header'
+
 
 function App() {
 
   return (
     <>
-      <div>ESHOP</div>
+      <Header/>
     </>
   )
 }
