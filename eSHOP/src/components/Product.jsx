@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
 const Product = ({id, title, image, price, rating}) => {
   return (
-    <div className="product">
+    <div className="product" key={id}>
         <div className="product__info">
             <p>{title}</p>
             <p className="product__price">
@@ -13,7 +14,7 @@ const Product = ({id, title, image, price, rating}) => {
                 { 
                   Array(rating)
                     .fill()
-                    .map((index) => <span key={id+index}>⭐</span>
+                    .map((index) => <span key={index}>⭐</span>
                 )}
             </div>
         </div>
