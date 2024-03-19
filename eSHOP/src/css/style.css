@@ -15,24 +15,25 @@ body {
 }
 
 .header {
-  height: 60px;
+  width: 100%;
+  height: 6rem;
   display: flex;
   align-items: center;
+  justify-content: start;
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: #131921;
+  column-gap: 2.5rem;
+  padding-left: 2.5rem;
 }
 .header__logo {
   text-decoration: none;
   display: flex;
   align-items: center;
   color: #ff9f00;
-  margin: 0 2.5rem;
   cursor: pointer;
-}
-.header__logoImage {
-  margin-right: 1rem;
+  column-gap: 1rem;
 }
 .header__logoTitle {
   border: 0;
@@ -43,7 +44,6 @@ body {
   flex: 1;
   align-items: center;
   border-radius: 2.4rem;
-  margin: 0 1rem;
 }
 .header__searchInput {
   height: 1.2rem;
@@ -56,33 +56,32 @@ body {
   height: 2.2rem !important;
   background-color: #ff9f00;
 }
-
-.nav {
+.header__nav {
   display: flex;
   justify-content: space-evenly;
 }
-.nav__item {
+.header__navItem {
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
   margin-right: 1rem;
   color: #fff;
 }
-.navitemLineOne {
+.header__navItemLineOne {
   font-size: 1rem;
 }
-.nav__itemLineTwo {
+.header__navItemLineTwo {
   font-size: 1.3rem;
   font-weight: 800;
 }
-.nav__itemBasket {
+.header__navItemBasket {
   display: flex;
   align-items: center;
   color: #fff;
   margin-right: 5rem;
   margin-left: 1rem;
 }
-.nav__basketCount {
+.header__basketCount {
   margin-left: 1rem;
   margin-right: 1rem;
 }

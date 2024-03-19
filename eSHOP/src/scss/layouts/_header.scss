@@ -1,24 +1,26 @@
 .header{
-    height: 60px; 
+    width: 100%;
+    height: 6rem; 
     display: flex;
     align-items: center;
+    justify-content: start;
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: $color-header-bg;
+    column-gap: 2.5rem;
+    padding-left: 2.5rem;
 
     &__logo {
         text-decoration: none;
         display: flex;
         align-items: center;
         color: #ff9f00;
-        margin: 0 2.5rem;
         cursor: pointer;
+        column-gap: 1rem;
     }
 
-    &__logoImage {
-        margin-right: 1rem;
-    }
+
 
     &__logoTitle {
         border: 0;
@@ -30,7 +32,7 @@
         flex: 1;
         align-items: center;
         border-radius: 2.4rem;
-        margin: 0 1rem;
+        // margin: 0 1rem;
     }
 
     &__searchInput {
@@ -40,18 +42,18 @@
         width: 100%;
     }
 
-    &__searchIcon {
+    &__searchIcon{
         padding: .5rem;
         height: 2.2rem !important;
         background-color: $color-icon-bg;
     }
-}
 
-.nav {
-    display: flex;
-    justify-content: space-evenly;
+    &__nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
-    &__item {
+    &__navItem {
         display: flex;
         flex-direction: column;
         margin-left: 1rem;
@@ -59,16 +61,16 @@
         color: $color-white;
     }
 
-    &itemLineOne {
+    &__navItemLineOne {
         font-size: 1rem;
     }
 
-    &__itemLineTwo {
+    &__navItemLineTwo {
         font-size: 1.3rem;
         font-weight: 800; 
     }
 
-    &__itemBasket {
+    &__navItemBasket {
         display: flex;
         align-items: center;
         color: $color-white;

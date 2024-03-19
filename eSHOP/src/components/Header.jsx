@@ -13,21 +13,23 @@ const Header = () => {
 
         <div className="header__search">
             <input type="text" className='header__searchInput'/>
-            <SearchIcon className='header_searchIcon'/> 
+            <div className="header__searchIcon">
+                <SearchIcon/> 
+            </div>
         </div>
 
         <div className="header__nav">
-            <div className="nav__item">
-                <span className="nav__itemLineOne">Hello Guest</span>
-                <span className="nav__itemLineTwo">Sign In</span>
+            <div className="header__navItem">
+                <span className="header__navItemLineOne">Hello Guest</span>
+                <span className="header__navItemLineTwo">Sign In</span>
             </div>
-            <div className="nav__item">
-                <span className="nav__itemLineOne">Your</span>
-                <span className="nav__itemLineTwo">Shop</span>
+            <div className="header__navItem">
+                <span className="header__navItemLineOne">Your</span>
+                <span className="header__navItemLineTwo">Shop</span>
             </div>
-            <div className="nav__item">
+            <div className="header__navItemBasket">
                 <ShoppingBasketIcon/>
-                <span className="nav__itemLineTwo">0</span>
+                <span className="header__navItemLineTwo header__basketCount">0</span>
             </div>
         </div>
     </header>
