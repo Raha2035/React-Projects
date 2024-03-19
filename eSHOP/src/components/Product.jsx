@@ -1,13 +1,23 @@
+/* eslint-disable react/prop-types */
 
-const Product = () => {
+const Product = ({id, title, image, price, rating}) => {
   return (
     <div className="product">
         <div className="product__info">
-            <p>Title</p>
-            <p className="product__price">$30</p>
-            <div className="product__rating">⭐⭐⭐⭐</div>
+            <p>{title}</p>
+            <p className="product__price">
+              <small>$</small>
+              <strong>{price}</strong>
+            </p>
+            <div className="product__rating">
+                { 
+                  Array(rating)
+                    .fill()
+                    .map((index) => <span key={id+index}>⭐</span>
+                )}
+            </div>
         </div>
-        <img src="" alt="product__image"  className="product__image"/>
+        <img src={image} alt="product__image"  className="product__image"/>
         <button className="">Add to basket</button>
     </div>
   )
